@@ -56,7 +56,7 @@ def predict(input):
     return input,text
 
 output_image = gr.Image(type="pil",image_mode="RGB",label="Detected Lines")
-output_text = gr.Textbox(label="Recognized Text", interactive=True, buttons=["copy"])
+output_text = gr.Textbox(label="Recognized Text", interactive=True, buttons=["copy"], rtl=True)
 
 iface = gr.Interface(predict,
                      inputs=input,
